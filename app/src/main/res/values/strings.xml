@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="Nombre"></string>
+    <string name="FechaN"></string>
+    <string name="Tel"></string>
+    <string name="Email"></string>
+    <string name="Descripcion"></string>
+</resources>

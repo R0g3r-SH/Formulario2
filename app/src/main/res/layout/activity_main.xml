@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="35dp"
+    android:layout_marginLeft="20dp"
+    android:orientation="vertical"
+    android:layout_marginRight="20dp"
+
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="15dp"
+        android:src="@drawable/baseline_account_circle_black_18dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="TODO"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Nombre Completo" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:src="@drawable/baseline_calendar_today_black_18dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="TODO"
+            android:onClick="Fecha"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:helperTextEnabled="true"
+            app:endIconMode="clear_text"
+            app:helperText="Puslsa el icono o 2 veces para desplegar el date Piker">
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/date"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Fecha de Nacimiento"
+                android:onClick="Fecha"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:src="@drawable/baseline_phone_black_18dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="TODO"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text">
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Tel"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Telefono"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:src="@drawable/baseline_email_black_18dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="TODO"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text">
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Email"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:src="@drawable/baseline_description_black_18dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="TODO"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text">
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Descrip"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Descripción de contacto"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/containedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFF"
+        android:onClick="Siguiente"
+        android:layout_gravity="center_horizontal"
+        app:backgroundTint="@color/colorAccent"
+        app:elevation="2dp"
+        android:text="SIGUIENTE" />
+
+</LinearLayout>
+
+</LinearLayout>
